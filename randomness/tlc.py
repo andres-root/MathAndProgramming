@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 
 def rand(m, b, c, a=0):

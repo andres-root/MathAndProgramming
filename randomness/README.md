@@ -1,2 +1,2 @@
-Prints 20 random numbers with the PRNG used by gcc
-==================================================
+Linear congruential generator. Prints 20 random numbers with the PRNG used by gcc
+=================================================================================

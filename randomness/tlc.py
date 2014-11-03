@@ -1,10 +1,17 @@
 
 
-def rand(a=0):
+def rand(m, b, c, a=0):
+    """
+    PRNG used by gcc
+    """
     i = 0
     while i <= 19:
-        a = (385934821 * a + 1) % (2 ** 32)
+        a = (b * a + c) % (m)
         i += 1
         print(a)
 
-rand(0)
+m = 2 ** 32
+b = 1103515245
+c = 12345
+a = 0  # seed
+rand(m, b, c, a)

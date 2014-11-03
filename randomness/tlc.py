@@ -2,7 +2,7 @@
 
 def rand(m, b, c, a=0):
     """
-    PRNG used by gcc
+    Prints 20 random numbers using the PRNG used by gcc
     """
     i = 0
     while i <= 19:

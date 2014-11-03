@@ -1,7 +1,10 @@
 
 
 def rand(a=0):
-    a = (385934821 * a + 1) % (2 ** 32)
-    return a
+    i = 0
+    while i <= 19:
+        a = (385934821 * a + 1) % (2 ** 32)
+        i += 1
+        print(a)
 
-print(rand())
+rand(0)

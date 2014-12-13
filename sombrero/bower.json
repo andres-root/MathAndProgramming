@@ -1,0 +1,8 @@
+{
+  "name": "Sombrero",
+  "description": "The Mexican Hat",
+  "version": "1.0.0",
+  "dependencies": {
+    "Processing.js": "~1.4.8"
+  }
+}

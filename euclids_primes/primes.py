@@ -38,11 +38,14 @@ def euclid(n):
         else:
             m = m * n
     p = m + 1
+    print(p)
     return is_prime(p)
 
 
 if __name__ == '__main__':
-    # As you'll see the proof fails with the 7th prime number. It is false!
+    """It is a common mistake to think that this proof says the product p1p2...
+    pr+1 is prime. The proof actually only uses the fact that there is a
+    prime dividing this product (see primorial primes)."""
     for i in range(1, 8):
         proof = euclid(i)
         if proof is False:

@@ -30,8 +30,9 @@ def get_primes(n):
 def euclid(n):
     """Tests the "Euclid's Proof of the Infinitude of Primes (c. 300 BC)"."""
     m = None
-    print(get_primes(n))
-    for n in get_primes(n):
+    primes = get_primes(n)
+    print(primes)
+    for n in primes:
         if m is None:
             m = n
         else:
@@ -42,4 +43,10 @@ def euclid(n):
 
 if __name__ == '__main__':
     # As you'll see the proof fails with the 7th prime number. It is false!
-    print(euclid(7))
+    for i in range(1, 8):
+        proof = euclid(i)
+        if proof is False:
+            print(proof)
+            break
+        else:
+            print(proof)
